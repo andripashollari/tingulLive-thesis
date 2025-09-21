@@ -82,7 +82,7 @@ const App = () => {
           )
         }
       />
-      <Route path="/api/spotify/callback" element={ authUser ? <Redirect /> : <Navigate to="/" />} />
+      <Route path="/testtesttesttesttest" element={ authUser ? <Redirect /> : <Navigate to="/" />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
     <Toaster
