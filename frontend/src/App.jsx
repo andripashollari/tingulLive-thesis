@@ -82,7 +82,6 @@ const App = () => {
           )
         }
       />
-      <Route path="/testtesttesttesttest" element={ authUser ? <Redirect /> : <Navigate to="/" />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
     <Toaster

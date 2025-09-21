@@ -77,7 +77,7 @@ export const spotifyCallback = async (req, res) => {
     console.log("Spotify tokens saved in cookies");
 
     // redirect to frontend profile
-    res.redirect("http://localhost:5173/profile?spotify=success");
+    res.redirect("/profile?spotify=success");
   } catch (err) {
     console.error("Error getting Tokens:", err);
     res.status(500).send("Error getting tokens");
