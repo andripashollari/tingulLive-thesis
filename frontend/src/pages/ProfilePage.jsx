@@ -45,7 +45,7 @@ const ProfilePage = () => {
   };
 
   const handleSpotifyLogin = () => {
-    window.location.href = "http://localhost:5001/api/spotify/login";
+    window.location.href = import.meta.env.MODE === "development" ? "http://localhost:5001/api/spotify/login" : "/api/spotify/login";
   };
 
   return (

@@ -16,9 +16,6 @@ export default function Footer() {
                 <Link to="/about" className="hover:text-primary transition">
                 About
                 </Link>
-                <Link to="/thankYou" className="hover:text-primary transition">
-                Falenderimet
-                </Link>
             </div>
             </div>
 
