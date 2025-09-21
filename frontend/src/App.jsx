@@ -19,7 +19,6 @@ import SearchPage from './pages/SearchPage.jsx';
 import UserPage from './pages/UsersPage.jsx';
 import MePage from './pages/MePage.jsx';
 import AdminPage from './pages/AdminPage.jsx';
-import Redirect from './pages/Redirect.jsx';
 
 const App = () => {
 
