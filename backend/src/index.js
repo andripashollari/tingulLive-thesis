@@ -28,13 +28,19 @@ app.use(cors({
     credentials: true,
     })
 );
-
+console.log("Mounting route at:", "/api/auth");
 app.use("/api/auth", authRoutes);
+console.log("Mounting route at:", "/api/messages");
 app.use("/api/messages", messageRoutes);
+console.log("Mounting route at:", "/api/spotfy");
 app.use("/api/spotify", spotifyRoutes);
+console.log("Mounting route at:", "/api/room");
 app.use("/api/room", roomRoutes);
+console.log("Mounting route at:", "/api/user");
 app.use("/api/user", userRouter);
+console.log("Mounting route at:", "/api/follow");
 app.use("/api/follow", followRouter);
+console.log("Mounting route at:", "/api/admin");
 app.use("/api/admin", adminRouter);
 
 if(process.env.NODE_ENV === "production") {
