@@ -257,6 +257,7 @@ const RoomUI = ({
           Largohu
         </button>
       </div>
+      <SpeakerLayout />
     </div>
   );
 };
