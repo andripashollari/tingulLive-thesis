@@ -19,7 +19,7 @@ import SearchPage from './pages/SearchPage.jsx';
 import UserPage from './pages/UsersPage.jsx';
 import MePage from './pages/MePage.jsx';
 import AdminPage from './pages/AdminPage.jsx';
-import { MicrophoneManager } from '@stream-io/video-react-sdk';
+import Redirect from './pages/Redirect.jsx';
 
 const App = () => {
 
@@ -82,6 +82,7 @@ const App = () => {
           )
         }
       />
+      <Route path="/api/spotify/callback" element={ authUser ? <Redirect /> : <Navigate to="/" />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
     <Toaster
