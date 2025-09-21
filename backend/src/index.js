@@ -32,7 +32,7 @@ console.log("Mounting route at:", "/api/auth");
 app.use("/api/auth", authRoutes);
 console.log("Mounting route at:", "/api/messages");
 app.use("/api/messages", messageRoutes);
-console.log("Mounting route at:", "/api/spotfy");
+console.log("Mounting route at:", "/api/spotify");
 app.use("/api/spotify", spotifyRoutes);
 console.log("Mounting route at:", "/api/room");
 app.use("/api/room", roomRoutes);
@@ -45,8 +45,8 @@ app.use("/api/admin", adminRouter);
 
 if(process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../frontend/dist")));
-
-    app.get("/*", (req, res) => {
+    console.log("Serving static files from:", path.join(__dirname, "../frontend/dist"));
+    app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
     });
 }
