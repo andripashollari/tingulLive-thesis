@@ -252,12 +252,13 @@ const RoomUI = ({
       )}
 
       {/* Leave Room */}
+      <SpeakerLayout />
       <div className="text-center">
         <button onClick={handleLeave} className="btn btn-error btn-lg">
           Largohu
         </button>
       </div>
-      <SpeakerLayout />
+      
     </div>
   );
 };
